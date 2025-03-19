@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Vista Tour - Experience the Beauty of West Africa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="ghana-colors">Terra Vista Tour</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#culture">Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-3 fw-bold">Welcome to Ghana</h1>
+                    <p class="lead mb-4">Experience the Culture, History, and Natural Beauty of the Gateway to Africa</p>
+                    <button class="btn btn-primary btn-lg me-2" data-bs-toggle="modal" data-bs-target="#tourModal">Book a Tour</button>
+                    <a href="#destinations" class="btn btn-outline-light btn-lg">Explore Destinations</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Ghana Section -->
+    <section class="py-5 about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-image-container">
+                        <div class="about-image rounded shadow-lg"></div>
+                        <div class="about-accent-shape"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <span class="section-subtitle text-primary fw-bold mb-2 d-block">About Ghana</span>
+                        <h2 class="section-title h2 fw-bold mb-3">Discover the Heart of West Africa</h2>
+                        <p class="about-text mb-4">Welcome to Ghana, where tradition meets modernity. Known as the "Gateway to Africa," our nation boasts a rich tapestry of culture, history, and natural wonders. From the bustling streets of Accra to the serene beaches of Cape Coast, every corner tells a unique story.</p>
+                        <div class="features mt-4">
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="feature-card p-3 bg-light rounded-3 h-100">
+                                        <i class="fas fa-landmark text-primary mb-3 fa-2x"></i>
+                                        <h4 class="feature-title fw-bold mb-2">Rich Heritage</h4>
+                                        <p class="feature-text mb-0">Historic castles & cultural sites</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-card p-3 bg-light rounded-3 h-100">
+                                        <i class="fas fa-drum text-primary mb-3 fa-2x"></i>
+                                        <h4 class="feature-title fw-bold mb-2">Vibrant Culture</h4>
+                                        <p class="feature-text mb-0">Traditional festivals & arts</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-card p-3 bg-light rounded-3 h-100">
+                                        <i class="fas fa-leaf text-primary mb-3 fa-2x"></i>
+                                        <h4 class="feature-title fw-bold mb-2">Natural Beauty</h4>
+                                        <p class="feature-text mb-0">Parks, beaches & waterfalls</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="feature-card p-3 bg-light rounded-3 h-100">
+                                        <i class="fas fa-users text-primary mb-3 fa-2x"></i>
+                                        <h4 class="feature-title fw-bold mb-2">Warm People</h4>
+                                        <p class="feature-text mb-0">Famous Ghanaian hospitality</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <div class="section-content">
+            <section id="destinations" class="py-5 bg-light">
+                <div class="container">
+                    <span class="section-subtitle text-primary fw-bold mb-2 d-block text-center">Explore</span>
+                    <h2 class="section-title fw-bold text-center mb-5">Top Destinations</h2>
+                    <div class="row g-4" id="destination-cards">
+                        <!-- Destination cards will be loaded dynamically -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="py-5">
+    <div class="container">
+        <span class="section-subtitle text-primary fw-bold mb-2 d-block text-center">Experience</span>
+        <h2 class="section-title text-center mb-5">Rich Ghanaian Culture</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="culture-card h-100">
+                    <div class="culture-icon-wrapper mb-4">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <h4 class="culture-title mb-3">Music & Dance</h4>
+                    <p class="culture-text">Experience vibrant traditional drumming and dance performances including:</p>
+                    <ul class="culture-list">
+                        <li><i class="fas fa-circle-check"></i> Adowa ceremonial dance</li>
+                        <li><i class="fas fa-circle-check"></i> Kete royal court music</li>
+                        <li><i class="fas fa-circle-check"></i> Modern Azonto dance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="culture-card h-100">
+                    <div class="culture-icon-wrapper mb-4">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h4 class="culture-title mb-3">Festivals</h4>
+                    <p class="culture-text">Join colorful traditional celebrations including:</p>
+                    <ul class="culture-list">
+                        <li><i class="fas fa-circle-check"></i> Homowo harvest festival</li>
+                        <li><i class="fas fa-circle-check"></i> Akwasidae royal ceremony</li>
+                        <li><i class="fas fa-circle-check"></i> Aboakyir deer hunting festival</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="culture-card h-100">
+                    <div class="culture-icon-wrapper mb-4">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4 class="culture-title mb-3">Arts & Crafts</h4>
+                    <p class="culture-text">Discover traditional Ghanaian craftsmanship:</p>
+                    <ul class="culture-list">
+                        <li><i class="fas fa-circle-check"></i> Handwoven Kente cloth</li>
+                        <li><i class="fas fa-circle-check"></i> Symbolic Adinkra prints</li>
+                        <li><i class="fas fa-circle-check"></i> Wood carvings & pottery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tours Section -->
+    <section id="tours" class="py-5 bg-light">
+        <div class="container">
+            <span class="section-subtitle text-primary fw-bold mb-2 d-block text-center">Explore</span>
+            <h2 class="section-title text-center mb-5">Popular Tours</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-image-wrapper">
+                            <img src="images/Asenema-falls.jpg" class="tour-image" alt="Asenama Falls">
+                            <div class="tour-overlay">
+                                <span class="tour-badge">Popular</span>
+                                <div class="tour-quick-info">
+                                    <span><i class="fas fa-clock"></i> 12 Days</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Eastern Region</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour-content">
+                            <div class="tour-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (20 reviews)</span>
+                            </div>
+                            <h5 class="tour-title">Asenama Falls</h5>
+                            <p class="tour-description">Asenema Waterfall is a serene cascade located near Akuapem Mampong in Ghana's Eastern Region.</p>
+                            <div class="tour-footer">
+                                <span class="tour-price">GHC 200</span>
+                                <a href="https://selar.com/q20p44" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    Book Now <i class="fas fa-external-link-alt ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-image-wrapper">
+                            <img src="images/umbrella rock.jpg" class="tour-image" alt="Umbrella Rock">
+                            <div class="tour-overlay">
+                                <span class="tour-badge">Popular</span>
+                                <div class="tour-quick-info">
+                                    <span><i class="fas fa-clock"></i> 12 Days</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Eastern Region</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour-content">
+                            <div class="tour-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (56 reviews)</span>
+                            </div>
+                            <h5 class="tour-title">Umbrella Rock</h5>
+                            <p class="tour-description">Umbrella Rock is a unique geological formation located near Boti Falls in Ghana's Eastern Region. This natural wonder features a large rock balanced atop a smaller one, creating an umbrella-like shape that can shelter 12 to 15 people. 
+                                when they merge, a rainbow is formed. 
+                            </p>
+                            <div class="tour-footer">
+                                <span class="tour-price">GHC 200</span>
+                                <a href="https://selar.com/q20p44" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    Book Now <i class="fas fa-external-link-alt ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-image-wrapper">
+                            <img src="images/Tree.jpg" class="tour-image" alt="The Three-headed Palm Tree">
+                            <div class="tour-overlay">
+                                <span class="tour-badge">Popular</span>
+                                <div class="tour-quick-info">
+                                    <span><i class="fas fa-clock"></i> 12 Days</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Eastern Region</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour-content">
+                            <div class="tour-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (36 reviews)</span>
+                            </div>
+                            <h5 class="tour-title">The Three-headed Palm Tree</h5>
+                            <p class="tour-description">The Three-Headed Palm Tree is a unique natural phenomenon located near Boti Falls in Ghana's Eastern Region. This distinctive tree features three separate trunks emerging from a single base, 
+                                with each head reportedly taking turns bearing fruit annually. 
+                            </p>
+                            <div class="tour-footer">
+                                <span class="tour-price">GHC 200</span>
+                                <a href="https://selar.com/q20p44" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    Book Now <i class="fas fa-external-link-alt ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="tour-card">
+                        <div class="tour-image-wrapper">
+                            <img src="images/boti-falls.jpg" class="tour-image" alt="Boti Falls">
+                            <div class="tour-overlay">
+                                <span class="tour-badge">Popular</span>
+                                <div class="tour-quick-info">
+                                    <span><i class="fas fa-clock"></i> 12 Days</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Eastern Region</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour-content">
+                            <div class="tour-rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (43 reviews)</span>
+                            </div>
+                            <h5 class="tour-title">Boti Falls</h5>
+                            <p class="tour-description">Boti Falls is a twin waterfall located in Ghana's Eastern Region,
+                                 near Koforidua. The falls are referred to as male and female, and according to local legend, when they merge, a rainbow is formed. 
+                            </p>
+                            <div class="tour-footer">
+                                <span class="tour-price">GHC 200</span>
+                                <a href="https://selar.com/q20p44" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                                    Book Now <i class="fas fa-external-link-alt ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other tours -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Gallery</h2>
+            <div class="row" id="gallery-container">
+                <!-- Gallery images will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="galleryModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" alt="" class="img-fluid w-100 rounded">
+                    <p class="modal-description mt-3 text-muted"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light testimonials-section">
+    <div class="container">
+        <span class="section-subtitle text-primary fw-bold mb-2 d-block text-center">Reviews</span>
+        <h2 class="section-title text-center mb-5">What Our Travelers Say</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Testimonial -->
+                        <div class="carousel-item active">
+                            <div class="testimonial-card">
+                                <div class="">
+                                    
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Amazing experience touring Ghana! The cultural sites were fascinating and our guide was incredibly knowledgeable."</p>
+                                    <div class="testimonial-author">
+                                        <h5 class="author-name">Sarah Johnson</h5>
+                                        <p class="author-location"><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Second Testimonial -->
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="">
+                                    
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Incredible destination! Every corner offered something new and exciting. A must-see for any traveler!"</p>
+                                    <div class="testimonial-author">
+                                        <h5 class="author-name">Glover David</h5>
+                                        <p class="author-location"><i class="fas fa-map-marker-alt"></i>  Ottawa, Canada</p>
+                                    </div>
+                                </div>
+                                <!-- Similar structure for second testimonial -->
+                            </div>
+                        </div>
+                        
+                        <!-- Third Testimonial -->
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="">
+                                    
+                                </div>
+                                <div class="testimonial-content">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"A truly unforgettable experience! The views were breathtaking and the history rich. Highly recommend visiting!"</p>
+                                    <div class="testimonial-author">
+                                        <h5 class="author-name">John Asare</h5>
+                                        <p class="author-location"><i class="fas fa-map-marker-alt"></i> Kumasi, Ghana</p>
+                                    </div>
+                                </div>
+                                <!-- Similar structure for third testimonial -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <div class="carousel-controls">
+                        <button class="carousel-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="mb-4">Have questions about visiting Ghana? Want to book a custom tour? Contact us and our travel experts will help you plan the perfect trip.</p>
+                    <div class="contact-info">
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Address</h5>
+                                <p>123 Independence Avenue, Accra, Ghana</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Phone</h5>
+                                <p>+233 54 599 6596</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-1">Email</h5>
+                                <p>info@terravistatour.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Logo and Description -->
+                <div class="col-lg-4 col-md-8 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Terra Vista Tour</h5>
+                    <p>Your gateway to authentic Ghanaian experiences, cultural immersion, and unforgettable adventures in the heart of West Africa.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#tours">Tours</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Popular Destinations -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Popular Destinations</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#destinations">Cape Coast Castle</a></li>
+                        <li><a href="#destinations">Kakum National Park</a></li>
+                        <li><a href="#destinations">Mole National Park</a></li>
+                        <li><a href="#destinations">Lake Volta</a></li>
+                        <li><a href="#destinations">Kumasi</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-3">We Accept</h5>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa fa-2x me-2"></i>
+                        <i class="fab fa-cc-mastercard fa-2x me-2"></i>
+                        <i class="fab fa-cc-paypal fa-2x me-2"></i>
+                        <i class="fab fa-cc-apple-pay fa-2x"></i>
+                    </div>
+                    <!-- Replace the app download section in the footer -->
+                    <h5 class="mb-2 mt-4">Download Our App</h5>
+                    <div class="app-downloads">
+                        <a href="#" class="app-link">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                        <a href="#" class="app-link">
+                            <i class="fab fa-apple"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Terra Vista Tour. All rights reserved. Built and Design By Dennis Tetteh Abayateye </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success mb-3" style="font-size: 4rem;"></i>
+                    <h4 id="successMessage">Your message has been sent successfully!</h4>
+                    <p>Thank you for contacting us. We will get back to you shortly.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Existing scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
